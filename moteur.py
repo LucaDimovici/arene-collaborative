@@ -1,4 +1,4 @@
-# Moteur Officiel de Montpellier
+# Moteur Officiel Occitanie - Montpellier
 def initialiser_arena(nom: str):
     return {"nom": nom, "combattans" : []}
 
