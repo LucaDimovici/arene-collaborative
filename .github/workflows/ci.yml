@@ -1,0 +1,22 @@
+name: Verification-CI                 # Nom affiché sur GitHub
+
+on:                                   # Déclencheurs
+  pull_request:                       # S'exécute à chaque Pull Request
+    branches: [ dev, main ]           # Ciblant dev ou main
+
+jobs:
+  controle-qualite:                   # Identifiant de la tâche
+    runs-on: ubuntu-latest            # OS alloué dans le Cloud
+
+    steps:                            # Étapes séquentielles
+      - name: Cloner le depot         # 1. Télécharge les fichiers du projet
+        uses: actions/checkout@v4
+
+      - name: Configurer Python       # 2. Installe Python officiel
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verifier la syntaxe     # 3. Contrôle la compilation des scripts
+        run: |
+          python -m py_compile moteur.py
