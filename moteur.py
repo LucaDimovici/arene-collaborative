@@ -1,3 +1,4 @@
+# Moteur Officiel de Montpellier
 def initialiser_arena(nom: str):
     return {"nom": nom, "combattans" : []}
 
