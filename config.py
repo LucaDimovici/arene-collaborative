@@ -1,3 +1,3 @@
 # config.py
-NOM_ARENE = "Colisee de Montpellier"
-MAX_TOURS = 10
+NOM_ARENE = "Colisee d'Occitanie (Montpellier)"
+MAX_TOURS = 15
