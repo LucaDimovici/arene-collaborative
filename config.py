@@ -1,3 +1,3 @@
 # config.py
-NOM_ARENE = "Stadium Occitanie"
-MAX_TOURS = 25
+NOM_ARENE = "Colisee d'Occitanie (Montpellier)"
+MAX_TOURS = 15
