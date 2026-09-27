@@ -19,4 +19,4 @@ jobs:
 
       - name: Verifier la syntaxe     # 3. Contrôle la compilation des scripts
         run: |
-          python -m py_compile moteur.py
+          python -m py_compile moteur.py arene.py rapport.py config.py main.py
